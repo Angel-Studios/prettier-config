@@ -1,4 +1,4 @@
-# `@Angel-Studios/prettier-config`
+# @Angel-Studios/prettier-config
 
 > Angel Studios [Prettier](https://prettier.io) config.
 
@@ -7,11 +7,11 @@
 **Install**:
 
 ```bash
-$ npm i --saveDev @angel-studios/prettier-config
+$ npm i --saveDev prettier @angel-studios/prettier-config
 ```
 or
 ```bash
-$ yarn add --dev @angel-studios/prettier-config
+$ yarn add --dev prettier @angel-studios/prettier-config
 ```
 
 **Edit `package.json`**:
@@ -19,21 +19,17 @@ $ yarn add --dev @angel-studios/prettier-config
 ```jsonc
 {
   // ...
-  "devDependencies" {
-    // ...
-    "prettier": "^2.5.1",
-  },
   "prettier": "@angel-studios/prettier-config"
 }
 ```
 
 ### Configuring with eslint
 ```bash
-$ npm i --saveDev eslint-config-prettier
+$ npm i --saveDev eslint-config-prettier eslint-plugin-prettier
 ```
 or
 ```bash
-$ yarn add --dev eslint-config-prettier
+$ yarn add --dev eslint-config-prettier eslint-plugin-prettier
 ```
 
 **Edit `eslintrc.js`**:
@@ -41,9 +37,23 @@ $ yarn add --dev eslint-config-prettier
 ```jsonc
 {
     // ...
-    extends: [
+    "extends": [
         // ...
         'prettier'
+    ],
+    "plugins": [
+        // ...
+        'prettier': 
+    ],
+    "rules": [
+        // ...
+        'prettier/prettier': 'error'
     ]
 }
 ```
+
+### Setup lint-stages / husky
+
+Follow the steps below to setup lint-staged / husky and enable prettier running on every commit!
+
+https://github.com/okonet/lint-staged
