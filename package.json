@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Angel Studios Prettier config",
   "main": "index.json",
-  "repository": "git@github.com:Angel-Studios/prettier-config.git",
+  "repository": "https://github.com/Angel-Studios/prettier-config.git",
   "author": "Patrick Walters <patrick.walters@angel.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Angel-Studios/prettier-config/issues"
+  },
+  "homepage": "https://github.com/Angel-Studios/prettier-config#readme"
 }
