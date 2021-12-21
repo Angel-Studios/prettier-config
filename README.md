@@ -7,11 +7,11 @@
 **Install**:
 
 ```bash
-$ npm i --saveDev prettier @angel-studios/prettier-config
+$ npm i --saveDev prettier @angel-studios/prettier-config @trivago/prettier-plugin-sort-imports
 ```
 or
 ```bash
-$ yarn add --dev prettier @angel-studios/prettier-config
+$ yarn add --dev prettier @angel-studios/prettier-config @trivago/prettier-plugin-sort-imports
 ```
 
 **Edit `package.json`**:
@@ -57,3 +57,17 @@ $ yarn add --dev eslint-config-prettier eslint-plugin-prettier
 Follow the steps below to setup lint-staged / husky and enable prettier running on every commit!
 
 https://github.com/okonet/lint-staged
+
+**Edit `package.json`**
+
+```jsonc
+{
+  // ...
+  "lint-staged": {
+    "*.js": [
+      "eslint --cache --fix"
+    ],
+    "*.{js,css,md}": "prettier --write"
+  }
+}
+```
