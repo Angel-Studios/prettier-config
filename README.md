@@ -2,6 +2,10 @@
 
 > Angel Studios [Prettier](https://prettier.io) config.
 
+## Caution
+
+**If you are importing global styles, create one file that imports all of the others in the preferred order so that the order sorting plugin doesn't put them in the incorrect order.** 
+
 ## Usage
 
 **Install**:
