@@ -7,7 +7,7 @@
 **Install**:
 
 ```bash
-$ npm i --saveDev prettier @angel-studios/prettier-config @trivago/prettier-plugin-sort-imports
+$ npm install -D prettier @angel-studios/prettier-config @trivago/prettier-plugin-sort-imports
 ```
 or
 ```bash
@@ -25,7 +25,7 @@ $ yarn add --dev prettier @angel-studios/prettier-config @trivago/prettier-plugi
 
 ### Configuring with eslint
 ```bash
-$ npm i --saveDev eslint-config-prettier eslint-plugin-prettier
+$ npm install -D eslint-config-prettier eslint-plugin-prettier
 ```
 or
 ```bash
