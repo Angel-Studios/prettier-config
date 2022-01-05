@@ -11,7 +11,7 @@
   "arrowParens": "always",
   "endOfLine": "lf",
   "importOrder": [
-    "^(.*)\\.(sass|css|scss)'$",
+    "^(.*)(sass|css|scss)$",
     "^react$",
     "<THIRD_PARTY_MODULES>",
     "^@/(.*)$",
