@@ -1,6 +1,6 @@
 {
   "name": "@angel-studios/prettier-config",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Angel Studios Prettier config",
   "main": "index.json",
   "repository": "https://github.com/Angel-Studios/prettier-config.git",
