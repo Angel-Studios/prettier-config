@@ -18,5 +18,13 @@
     "^[./]"
   ],
   "importOrderSeparation": false,
-  "importOrderCaseInsensitive": false
+  "importOrderCaseInsensitive": false,
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ]
 }
